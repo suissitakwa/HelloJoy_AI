@@ -3,7 +3,7 @@ import VoiceAssistant from "./demo/VoiceAssistant";
 import { fetchDemoBusiness } from "./demo/api";
 import { formatPhone, site } from "./config";
 
-const OPEN_EVENT = "helloroster:open-receptionist";
+const OPEN_EVENT = "hellojoy:open-receptionist";
 const BUBBLE_DELAY_MS = 5000;
 const BUBBLE_VISIBLE_MS = 5000;
 

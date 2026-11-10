@@ -1,4 +1,4 @@
-/* HelloRoster AI: warm modern palette. Deep evergreen, cream, terracotta, honey. */
+/* HelloJoy AI: warm modern palette. Deep evergreen, cream, terracotta, honey. */
 :root {
   --evergreen: #10302d;
   --evergreen-2: #18423e;
@@ -302,7 +302,7 @@ a { color: var(--terracotta-dark); }
   .rw-panel { width: 100%; }
 }
 
-/* PawCare's voice assistant inside the panel, restyled to the HelloRoster AI palette */
+/* PawCare's voice assistant inside the panel, restyled to the HelloJoy AI palette */
 .rw .voice-panel { padding: 0; background: none; border: 0; }
 .rw .voice-controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
 .rw .actions { display: flex; flex-wrap: wrap; gap: 8px; }

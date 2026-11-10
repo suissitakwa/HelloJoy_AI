@@ -26,7 +26,7 @@ function primaryCta(): PrimaryCta {
 }
 
 export const site = {
-  name: "HelloRoster AI",
+  name: "HelloJoy AI",
   serviceArea: clean(env.VITE_SERVICE_AREA) || "Los Angeles",
   /** The agency's own line, E.164. Empty hides click-to-call. */
   phone,

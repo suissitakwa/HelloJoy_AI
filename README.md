@@ -1,6 +1,6 @@
-# HelloRoster AI
+# HelloJoy AI
 
-A one-page sales site for HelloRoster AI, an AI receptionist service for local businesses. Visitors can talk to a live demo receptionist from the page before booking a meeting.
+A one-page sales site for HelloJoy AI, an AI receptionist service for local businesses. Visitors can talk to a live demo receptionist from the page before booking a meeting.
 
 The demo receptionist is the PawCare voice receptionist. This site calls its API to start browser voice calls; no provider key is held here.
 
@@ -39,5 +39,5 @@ With neither link nor phone set, the main buttons open the demo receptionist.
 1. Push this folder to its own GitHub repository.
 2. In Netlify, choose **Add new site → Import an existing project** and pick the repository. `netlify.toml` supplies the build settings.
 3. Under **Site configuration → Environment variables**, set `VITE_DEMO_API_URL` to the PawCare backend URL, plus any optional variables above. Then **Deploys → Trigger deploy**.
-4. On the PawCare backend (Railway), add this site's exact origin, for example `https://helloroster.netlify.app`, to `CORS_ALLOWED_ORIGINS`, separated by a comma from the existing origin. Redeploy the backend.
+4. On the PawCare backend (Railway), add this site's exact origin, for example `https://hellojoyai.netlify.app`, to `CORS_ALLOWED_ORIGINS`, separated by a comma from the existing origin. Redeploy the backend.
 5. Open the site, press **Talk to our receptionist**, and allow the microphone.

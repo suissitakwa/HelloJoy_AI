@@ -106,7 +106,7 @@ function Header() {
           <span className="ag-logo-mark">
             <LogoMark />
           </span>
-          HelloRoster <span className="ag-logo-ai">AI</span>
+          HelloJoy <span className="ag-logo-ai">AI</span>
         </a>
         <nav aria-label="Main" className="ag-nav">
           <a href="#problem">The problem</a>
@@ -151,7 +151,7 @@ export default function AgencyApp() {
               <p className="eyebrow">For local businesses in {site.serviceArea}</p>
               <h1>Never miss a customer call again.</h1>
               <p className="hero-sub">
-                HelloRoster AI answers every call, 24/7, and books the appointment while you're busy with a customer.
+                HelloJoy AI answers every call, 24/7, and books the appointment while you're busy with a customer.
                 Serving local businesses across {site.serviceArea}.
               </p>
               <div className="cta-row">
@@ -244,7 +244,7 @@ export default function AgencyApp() {
                 <p>That's the average small business. It never shows up as an invoice.</p>
               </div>
               <div className="price-card price-plan">
-                <p className="price-kicker">HelloRoster AI</p>
+                <p className="price-kicker">HelloJoy AI</p>
                 <p className="price-figure price-figure-small">Book a call for pricing</p>
                 <p className="price-unit">One simple monthly plan, sized to your call volume</p>
                 <ul className="price-list">
@@ -261,7 +261,7 @@ export default function AgencyApp() {
 
         <section className="section why" id="why-us" aria-labelledby="why-title">
           <div className="ag-container">
-            <p className="eyebrow eyebrow-dark">Why HelloRoster AI</p>
+            <p className="eyebrow eyebrow-dark">Why HelloJoy AI</p>
             <h2 id="why-title">Local, focused, and proven.</h2>
             <ul className="reasons">
               {REASONS.map((reason) => (
