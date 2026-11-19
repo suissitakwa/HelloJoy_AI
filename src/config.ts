@@ -12,6 +12,7 @@ function clean(value: string | undefined): string {
 const bookingUrl = clean(env.VITE_BOOKING_URL);
 const signupUrl = clean(env.VITE_SIGNUP_URL);
 const phone = clean(env.VITE_AGENCY_PHONE);
+const email = clean(env.VITE_CONTACT_EMAIL) || "takwa@helloeverai.com";
 
 export type PrimaryCta =
   | { kind: "link"; href: string; label: string; short: string; external: boolean }
@@ -26,8 +27,10 @@ function primaryCta(): PrimaryCta {
 }
 
 export const site = {
-  name: "HelloJoy AI",
-  serviceArea: clean(env.VITE_SERVICE_AREA) || "Los Angeles",
+  name: "HelloEver AI",
+  serviceArea: clean(env.VITE_SERVICE_AREA) || "San Jose",
+  /** Where owners can write to us. */
+  email,
   /** The agency's own line, E.164. Empty hides click-to-call. */
   phone,
   primaryCta: primaryCta(),

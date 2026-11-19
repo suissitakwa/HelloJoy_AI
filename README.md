@@ -1,6 +1,6 @@
-# HelloJoy AI
+# HelloEver AI
 
-A one-page sales site for HelloJoy AI, an AI receptionist service for local businesses. Visitors can talk to a live demo receptionist from the page before booking a meeting.
+A one-page sales site for HelloEver AI, an AI receptionist service for local businesses. Visitors can talk to a live demo receptionist from the page before booking a meeting.
 
 The demo receptionist is the PawCare voice receptionist. This site calls its API to start browser voice calls; no provider key is held here.
 
@@ -30,7 +30,8 @@ All are `VITE_` variables, so they are public and compiled into the bundle. Chan
 | `VITE_BOOKING_URL` | Meeting link for the main buttons ("Book a meeting") |
 | `VITE_SIGNUP_URL` | Used for the main buttons when there is no meeting link |
 | `VITE_AGENCY_PHONE` | Your number in E.164, for example `+13105550123`. Shows click-to-call |
-| `VITE_SERVICE_AREA` | Defaults to `Los Angeles` |
+| `VITE_SERVICE_AREA` | Defaults to `San Jose` |
+| `VITE_CONTACT_EMAIL` | Shown as "Email us". Defaults to `takwa@helloeverai.com` |
 
 With neither link nor phone set, the main buttons open the demo receptionist.
 
@@ -39,5 +40,5 @@ With neither link nor phone set, the main buttons open the demo receptionist.
 1. Push this folder to its own GitHub repository.
 2. In Netlify, choose **Add new site → Import an existing project** and pick the repository. `netlify.toml` supplies the build settings.
 3. Under **Site configuration → Environment variables**, set `VITE_DEMO_API_URL` to the PawCare backend URL, plus any optional variables above. Then **Deploys → Trigger deploy**.
-4. On the PawCare backend (Railway), add this site's exact origin, for example `https://hellojoyai.netlify.app`, to `CORS_ALLOWED_ORIGINS`, separated by a comma from the existing origin. Redeploy the backend.
+4. On the PawCare backend (Railway), add this site's exact origin, for example `https://helloeverai.com`, to `CORS_ALLOWED_ORIGINS`, separated by a comma from the existing origin. Redeploy the backend.
 5. Open the site, press **Talk to our receptionist**, and allow the microphone.

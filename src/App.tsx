@@ -8,7 +8,9 @@ const STATS = [
   { value: "$126K", label: "lost per year, on average, to missed calls." },
 ];
 
-const INDUSTRIES = ["Hair salons", "Barbershops", "Pet groomers", "Spas", "Clinics", "Home services"];
+// Only what the receptionist handles today. The rest is named as coming, not as served.
+const INDUSTRIES = ["Dog groomers", "Mobile groomers", "Grooming salons"];
+const COMING_SOON = "Hair and nail salons coming soon";
 
 const STEPS = [
   {
@@ -35,12 +37,12 @@ const REASONS = [
     body: "It learns your services, prices and booking rules. It answers like someone who works there.",
   },
   {
-    title: "Up to 5x return",
-    body: "Our average clients see up to 5x ROI. It never double-books and reads every booking back first.",
+    title: "Careful with every booking",
+    body: "It never double-books, and it reads every booking back to the caller before confirming it.",
   },
   {
-    title: "Free trial if it fits",
-    body: "If your business is a good fit, try it on real calls first. Decide after you've heard it work.",
+    title: "Free 30-day pilot",
+    body: "Try it on your real calls for 30 days, free. Keep it only if it earns its place.",
   },
 ];
 
@@ -106,7 +108,7 @@ function Header() {
           <span className="ag-logo-mark">
             <LogoMark />
           </span>
-          HelloJoy <span className="ag-logo-ai">AI</span>
+          HelloEver <span className="ag-logo-ai">AI</span>
         </a>
         <nav aria-label="Main" className="ag-nav">
           <a href="#problem">The problem</a>
@@ -151,7 +153,7 @@ export default function AgencyApp() {
               <p className="eyebrow">For local businesses in {site.serviceArea}</p>
               <h1>Never miss a customer call again.</h1>
               <p className="hero-sub">
-                HelloJoy AI answers every call, 24/7, and books the appointment while you're busy with a customer.
+                HelloEver AI answers every call, 24/7, and books the appointment while you're busy with a customer.
                 Serving local businesses across {site.serviceArea}.
               </p>
               <div className="cta-row">
@@ -166,6 +168,7 @@ export default function AgencyApp() {
             {INDUSTRIES.map((industry) => (
               <span key={industry}>{industry}</span>
             ))}
+            <span className="industries-soon">{COMING_SOON}</span>
           </div>
         </section>
 
@@ -244,14 +247,14 @@ export default function AgencyApp() {
                 <p>That's the average small business. It never shows up as an invoice.</p>
               </div>
               <div className="price-card price-plan">
-                <p className="price-kicker">HelloJoy AI</p>
+                <p className="price-kicker">HelloEver AI</p>
                 <p className="price-figure price-figure-small">Book a call for pricing</p>
                 <p className="price-unit">One simple monthly plan, sized to your call volume</p>
                 <ul className="price-list">
                   <li>Answers 24/7, including holidays</li>
                   <li>Keeps your existing number</li>
                   <li>Never double-books a slot</li>
-                  <li>Free trial if it's a good fit</li>
+                  <li>Free 30-day pilot</li>
                 </ul>
                 <PrimaryButton label="Get my price" className="btn btn-primary btn-block" />
               </div>
@@ -261,8 +264,8 @@ export default function AgencyApp() {
 
         <section className="section why" id="why-us" aria-labelledby="why-title">
           <div className="ag-container">
-            <p className="eyebrow eyebrow-dark">Why HelloJoy AI</p>
-            <h2 id="why-title">Local, focused, and proven.</h2>
+            <p className="eyebrow eyebrow-dark">Why HelloEver AI</p>
+            <h2 id="why-title">Local, focused, and careful.</h2>
             <ul className="reasons">
               {REASONS.map((reason) => (
                 <li className="reason" key={reason.title}>
@@ -290,7 +293,7 @@ export default function AgencyApp() {
         <div className="ag-container footer-grid">
           <div>
             <p className="footer-brand">{site.name}</p>
-            <p>AI receptionists for local businesses.</p>
+            <p>The AI receptionist for groomers.</p>
           </div>
           <div>
             <p className="footer-label">{site.phone ? "Call us" : "Hear it first"}</p>
@@ -303,6 +306,12 @@ export default function AgencyApp() {
                 Talk to our receptionist
               </button>
             )}
+          </div>
+          <div>
+            <p className="footer-label">Email us</p>
+            <a className="footer-email" href={`mailto:${site.email}`}>
+              {site.email}
+            </a>
           </div>
           <div>
             <p className="footer-label">Service area</p>
