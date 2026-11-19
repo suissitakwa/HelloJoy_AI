@@ -326,6 +326,9 @@ export default function AgencyApp() {
           <p>
             © {new Date().getFullYear()} {site.name}. Your number stays yours.
           </p>
+          <p className="footer-legal">
+            <a href="/privacy/">Privacy Policy</a> · <a href="/terms/">Terms of Service</a>
+          </p>
         </div>
       </footer>
 

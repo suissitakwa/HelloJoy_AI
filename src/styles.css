@@ -350,3 +350,7 @@ a { color: var(--terracotta-dark); }
   border: 1px solid rgba(246, 239, 226, 0.16); background: rgba(246, 239, 226, 0.04);
 }
 .industries .industries-soon { border-style: dashed; background: transparent; font-style: italic; }
+
+.footer-legal a { color: var(--on-dark-soft); }
+.footer-legal a:hover { color: var(--honey); }
+.footer-base .footer-legal { margin-top: 8px; }
