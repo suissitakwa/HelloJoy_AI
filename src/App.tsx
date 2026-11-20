@@ -9,8 +9,8 @@ const STATS = [
 ];
 
 // Only what the receptionist handles today. The rest is named as coming, not as served.
-const INDUSTRIES = ["Dog groomers", "Mobile groomers", "Grooming salons"];
-const COMING_SOON = "Hair and nail salons coming soon";
+const INDUSTRIES = ["Hair salons", "Barbershops", "Dog groomers", "Mobile groomers"];
+const COMING_SOON = "Nail salons coming soon";
 
 const STEPS = [
   {
@@ -293,7 +293,7 @@ export default function AgencyApp() {
         <div className="ag-container footer-grid">
           <div>
             <p className="footer-brand">{site.name}</p>
-            <p>The AI receptionist for groomers.</p>
+            <p>The AI receptionist for salons, barbershops and groomers.</p>
           </div>
           <div>
             <p className="footer-label">{site.phone ? "Call us" : "Hear it first"}</p>
